@@ -2,15 +2,14 @@ html {
     background-color: white;
 }
 
-header {
+
+
+.menu {
+    text-align: center;
     background-color: rgba(81, 31, 173, 0.759);
     text-align: center;
     width: 90%;
     margin: auto;
-}
-
-.menu {
-    text-align: center;
 }
 
 /*Menu Buttons*/
@@ -91,94 +90,24 @@ h3{
     margin: auto;
 }
 
-.dwtd {
+.dwtd, .GraveRunners, .dissolution, .sneakyslumbers, .spiral {
+    background-color: rgba(161, 156, 156, 0.63);
     border-color: black;
     border-style: solid;
     padding: 10px;
     width: 400px;
     height: 450px;
     display: inline-block;
+    vertical-align: top;
 }
 
-.dwtd a {
-    color: white;
+.dwtd a, .GraveRunners a, .dissolution a, .sneakyslumbers a, .spiral a{
+    color: black;
     font-size: large;
 }
 
-.dwtd a:hover {
-    color: black;
-}
-
-.GraveRunners {
-    border-color: black;
-    border-style: solid;
-    padding: 10px;
-    width: 400px;
-    height: 450px;
-    display: inline-block;
-}
-
-.GraveRunners a {
-    color: white;
-    font-size: large;
-}
-
-.GraveRunners a:hover {
-    color: black;
-}
-
-.dissolution {
-    border-color: black;
-    border-style: solid;
-    padding: 10px;
-    width: 400px;
-    height: 450px;
-    display: inline-block;
-}
-
-.dissolution a {
-    color: white;
-    font-size: large;
-}
-
-.dissolution a:hover {
-    color: black;
-}
-
-.sneakyslumbers {
-    border-color: black;
-    border-style: solid;
-    padding: 10px;
-    width: 400px;
-    height: 450px;
-    display: inline-block;
-}
-
-.sneakyslumbers a {
-    color: white;
-    font-size: large;
-}
-
-.sneakyslumbers a:hover {
-    color: black;
-}
-
-.spiral {
-    border-color: black;
-    border-style: solid;
-    padding: 10px;
-    width: 400px;
-    height: 450px;
-    display: inline-block;
-}
-
-.spiral a {
-    color: white;
-    font-size: large;
-}
-
-.spiral a:hover {
-    color: black;
+.dwtd a:hover, .GraveRunners a:hover, .dissolution a:hover, .sneakyslumbers a:hover, .spiral a:hover {
+    color: blue;
 }
 
 footer {
