@@ -30,13 +30,13 @@ body{
 }
 
 header{
-    background:linear-gradient(90deg,var(--accent),var(--accent-600));
-    color:#fff;
-    padding:18px;
-    border-radius:var(--radius);
+    background-color: #4f2ea0;
+    color: white;
+    padding:16px;
     display:flex;
     align-items:center;
-    justify-content:space-between
+    justify-content:space-between;
+    gap:12px;
 }
 
 .title h1{
@@ -71,7 +71,7 @@ header{
 
 .content{
     background:var(--card);
-    background-color: #0d639c98;
+    background-color: #837c7c98;
     padding:20px;
     margin-top:18px;
     border-radius:var(--radius);
@@ -124,7 +124,7 @@ header{
 .models3d,.animations{
     margin-top:18px;
     padding:12px;
-    background:rgba(81,31,173,0.04);
+    background:linear-gradient(180deg,rgba(180, 43, 43, 0.98),#fff);
     border-radius:8px
 }
 
@@ -135,7 +135,7 @@ footer{
     background:var(--accent-600);
     padding:16px 12px;
     border-radius:8px;
-    max-width:var(--max-width)}
+}
 
 .Contact{
     text-align:left;
