@@ -1,138 +1,164 @@
-html {
-    background-color: white;
+:root{
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --accent: #511fad;
+    --accent-600: #3c128f;
+    --muted: #6b7280;
+    --max-width: 1000px;
+    --radius: 10px;
+}
+
+*{box-sizing: border-box}
+
+html,body{
+    height:100%;
+    margin:0;
+    background:var(--bg);
+    color:#0f1724
+}
+
+body{
+    font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    line-height:1.6;
+    font-size:16px
+}
+
+.container{
+    max-width:var(--max-width);
+    margin:24px auto;
+    padding:0 16px
+}
+
+header{
+    background:linear-gradient(90deg,var(--accent),var(--accent-600));
+    color:#fff;
+    padding:18px;
+    border-radius:var(--radius);
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+}
+
+.title h1{
+    margin:0;
+    font-size:20px;
+    font-weight:700
+}
+
+.menu a{
+    display:inline-block;
+    text-decoration:none;
+    color:var(--accent-50);
+    padding:8px 12px;
+    margin-left:8px;
+    border-radius:8px;
+    transition:all 180ms ease;
+    font-weight:600
+}
+
+.menu a:hover{
+    background:rgba(255,255,255,0.12);
+    color:#fff;
+    transform:translateY(-1px)
 }
 
 
-
-.menu {
-    text-align: center;
-    background-color: rgba(81, 31, 173, 0.759);
-    text-align: center;
-    width: 90%;
-    margin: auto;
+.subtitle h2{
+    margin-top:0;
+    font-size:28px;
+    text-align:center
 }
 
-/*Menu Buttons*/
-a {
-    display: inline-block;
-    padding-left: 3%;
-    padding-right: 3%;
+.content{
+    background:var(--card);
+    background-color: #0d639c98;
+    padding:20px;
+    margin-top:18px;
+    border-radius:var(--radius);
+    box-shadow:0 6px 18px rgba(15,23,36,0.06);
+    color:#111827}
+
+.content h3{
+    margin-top:0
 }
 
-/*Color of Links For Websites Having Already Been Visisted
-a:visited {
-    color: rgb(250, 250, 250);
-}
-*/
-
-/*Color of Links*/
-a:link {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+.projects-grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;align-items:start
 }
 
-/*Color of Links When Hovering Over Them With Mouse*/
-a:hover {
-    color: black;
+.project-card{
+    background:linear-gradient(180deg,rgba(180, 43, 43, 0.98),#fff);
+    border-radius:8px;padding:12px;box-shadow:0 6px 14px rgba(2,6,23,0.06);
+    transition:transform 180ms ease,box-shadow 180ms ease
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 30px rgba(2,6,23,0.12)}
+
+.project-card .thumb{
+    display:block;
+    border-radius:6px;
+    overflow:hidden}
+
+.project-card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    display:block
 }
 
-
-.content {
-    background-color: rgba(14, 87, 136, 0.993);
-    border-color: black;
-    border-style: solid;
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 90%;
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.5;
-    text-align: left;
+.project-card h4{
+    margin:10px 0 6px;
+    font-size:18px
 }
 
-.content h3 {
-    text-align: center;
+.project-card p{
+    margin:0;
+    color:var(--muted);
+    font-size:14px
 }
 
-h1 {
-    color: black;
-    text-align: center;
-    font-size: 30px;
+.models3d,.animations{
+    margin-top:18px;
+    padding:12px;
+    background:rgba(81,31,173,0.04);
+    border-radius:8px
 }
 
-h3{
-    color: white;
+footer{
+    margin:28px auto 48px;
+    text-align:center;
+    color:#fff;
+    background:var(--accent-600);
+    padding:16px 12px;
+    border-radius:8px;
+    max-width:var(--max-width)}
+
+.Contact{
+    text-align:left;
+    max-width:480px;
+    margin:8px auto 0
 }
 
-
-.Games {
-    text-align: center;
-    display: inline-block
+dl{
+    margin:0;
+    line-height:1.6;
+    color:var(--muted)
 }
 
-.Games img {
-    width: 315px;
-    height: 250px;
-    margin: auto;
+dt{
+    font-weight:600
+}
+dd{
+    margin:0 0 8px 0
 }
 
-.Games p, ul, li {
-    text-align: left;
-    margin: auto;
+@media (max-width:1000px){
+    .projects-grid{grid-template-columns:repeat(2,1fr)}
 }
-
-.dwtd, .GraveRunners, .dissolution, .sneakyslumbers, .spiral {
-    background-color: rgba(161, 156, 156, 0.63);
-    border-color: black;
-    border-style: solid;
-    padding: 10px;
-    width: 400px;
-    height: 450px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.dwtd a, .GraveRunners a, .dissolution a, .sneakyslumbers a, .spiral a{
-    color: black;
-    font-size: large;
-}
-
-.dwtd a:hover, .GraveRunners a:hover, .dissolution a:hover, .sneakyslumbers a:hover, .spiral a:hover {
-    color: blue;
-}
-
-footer {
-    position: relative;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    background-color: #041f5af6;
-    color: white;
-}
-
-.Contact {
-    text-align: left;
-    margin-left: 5%;
-}
-
-dl {
-    line-height: 2.0;
-}
-
-dt {
-    font-size: medium;
-}
-
-dd {
-    font-size: small;
+@media (max-width:640px){
+    header{flex-direction:column;align-items:flex-start}.projects-grid{grid-template-columns:1fr}.menu a{margin-left:0}
 }
