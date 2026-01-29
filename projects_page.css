@@ -112,13 +112,26 @@ header{
 
 .project-card h4{
     margin:10px 0 6px;
-    font-size:18px
+    font-size:18px;
 }
 
 .project-card p{
     margin:0;
     color:var(--muted);
     font-size:14px
+}
+
+.project-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-card a:hover {
+    background:rgb(8, 8, 8);
+    color: white;
+    border-radius: 25px;
+    padding: 2px;
+    
 }
 
 .models3d,.animations{
