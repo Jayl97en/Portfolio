@@ -44,10 +44,10 @@ header{
 
 .title h1{ margin:0; font-size:1.6rem; }
 
-.menu{ display:flex; gap:10px; align-items:center; }
+.menu{ display:flex; gap:10px; align-items:center; color: white;}
 
-a{ display:inline-block; padding:8px 12px; color:var(--accent-500); text-decoration:none; border-radius:8px; font-weight:600; }
-a:hover,a:focus{ background:rgba(79,46,160,0.08); color:var(--accent-500); transform:translateY(-1px); }
+.menu a{ display:inline-block; padding:8px 12px; color: white; text-decoration:none; border-radius:8px; font-weight:600; }
+a:hover,a:focus{ background:rgb(255, 255, 255); color: white; transform:translateY(-1px); }
 
 /* Layout: two-column with sidebar */
 .layout{
@@ -91,7 +91,7 @@ footer{
     margin:28px auto 48px;
     text-align:center;
     color:#fff;
-    background:var(--accent-600);
+    background: #4f2ea0;;
     padding:16px 12px;
     border-radius:8px;
 }
