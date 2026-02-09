@@ -104,14 +104,21 @@ dd{ margin:0 0 8px 0; color:#fff; }
 /* profile avatar inside sidebar */
 .profile{ text-align:center; }
 .profile .avatar{
-    width:96px;
-    height:96px;
+    width:170px;
+    height:220px;
     border-radius:50%;
     margin:0 auto 12px auto;
     background:linear-gradient(135deg,var(--accent-600),var(--accent-500));
     display:block;
 }
 
+.avatar img{
+    width: 170px;
+    height:220px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
 /* adjust contact block to fit narrow column */
 .sidebar .Contact{ text-align:left; }
 
