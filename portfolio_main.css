@@ -115,7 +115,7 @@ dd{ margin:0 0 8px 0; color:#fff; }
 .avatar img{
     width: 170px;
     height:220px;
-    border-radius:50%;
+    border-radius:60%;
     display:block;
     margin:auto;
 }
