@@ -1,5 +1,5 @@
 :root{
-    --bg: #f8fafc;
+    --bg: rgb(32, 32, 32);
     --card: #ffffff;
     --accent: #511fad;
     --accent-600: #3c128f;
@@ -14,13 +14,21 @@ html,body{
     height:100%;
     margin:0;
     background:var(--bg);
-    color:#0f1724
+    color:white
 }
 
 body{
     font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
     line-height:1.6;
     font-size:16px
+}
+
+.hero{
+    background: linear-gradient(135deg, #04aef1, #01325f);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    transition: padding 0.3s ease-in-out;
 }
 
 .container{
@@ -35,25 +43,24 @@ body{
     min-width: 200px;
     height:auto;
     display:flex;
-    
+    border-radius: 12px; /* Softens corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft, premium shadow */
 }
 
 .image {
     display: flex;
-    background: #b1aeae;
 }
 
 .images {
     flex: 50%;
-    padding: 30px;
     min-width: 200px;
+    margin: 10px;
 }
 
 .concept {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #b1aeae;
     padding: 30px;
     min-width: 200px;
 }
@@ -61,7 +68,8 @@ body{
 .concept img{
     padding: 30px;
     min-width: 200px;
-    margin-bottom:16px
+    margin-bottom:16px;
+    border-radius: 12px; /* Softens corners */
 }
 
 p {
@@ -72,7 +80,7 @@ p {
 }
 
 header{
-    background-color: #4f2ea0;
+    background-color: black;
     color: white;
     padding:16px;
     display:flex;

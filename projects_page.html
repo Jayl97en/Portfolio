@@ -20,12 +20,19 @@
         <nav class="menu" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="projects_page.html">Projects</a>
+            <a href="gallery_page.html">Gallery</a>
+            <a href="contact_page.html">Contact</a>
         </nav>
     </header>
 
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Projects</h1>
+        </div>
+    </div>
+
     <main class="container">
         <section class="subtitle">
-            <h2>Projects</h2>
             <div class="content">
                 <h3>Games</h3>
 
@@ -78,8 +85,10 @@
                 <div class="project-grid">
                     <article class="project-card">
                         <div class="images-side-by-side">
-                            <img src="Pictures/Jump_Shark300.jpg" alt="Shark Jumping Out Of Water">
-                            <img src="Pictures/Jump_Shark2300.jpeg" alt="Shark Jumping Out Of Water">
+                            <a href="shark.html">
+                                <img src="Pictures/Jump_Shark300.jpg" alt="Shark Jumping Out Of Water">
+                                <img src="Pictures/Jump_Shark2300.jpeg" alt="Shark Jumping Out Of Water">
+                            </a>
                         </div>
                         <h4><a href="shark.html">Shark</a></h4>
                         <p>A 3D model of a shark jumping out of the water. The model and render were done in Blender.</p>
@@ -89,9 +98,11 @@
 
                     <article class="project-card">
                         <div class="images-side-by-side">
-                            <img src="Pictures/17.png" alt="Japanese Style Home Exterior">
-                            <img src="Pictures/18.png" alt="Japanese Style Home Interior">
-                            <img src="Pictures/22.png" alt="Japanese Style Home Interior">
+                            <a href="japanese_home.html">
+                                <img src="Pictures/17.png" alt="Japanese Style Home Exterior">
+                                <img src="Pictures/18.png" alt="Japanese Style Home Interior">
+                                <img src="Pictures/22.png" alt="Japanese Style Home Interior">
+                            </a>
                         </div>
                         <h4><a href="japanese_home.html">Japanese Style Home</a></h4>
                         <p>A 3D model of a Japanese style home rendered in Rhino 8.</p>
@@ -103,40 +114,43 @@
                 <br>
                     <br>
             <h3>Animations</h3>
-
-                <section class="animations">
-                    <article class="project-card">
-                        <video controls>
-                            <source src="Pictures/Final_Project_2501.mp4" type="video/mp4">
-                        </video>
-                        <h4><a href="change.html">Change</a></h4>
-                        <p>An animation project done in Maya</p>
-
-                    </article>
-
-                    <br>
-
-                    <article class="project-card">
-                        <video controls>
-                            <source src="Pictures/SneakyWalk.mp4" type="video/mp4">
-                        </video>
-                        <h4><a href="SneakyWalk.html">Sneaky Slumbers Character Movements</a></h4>
-                        <p>Character movements for the Sneaky Slumbers project.</p>
-                    </article>
-                </section>
-
-                <h3>Websites</h3>
                 <div class="project-grid">
-                    <article class="project-card">
-                        <a class="thumb" href="JVN.html">
-                            <img src="Pictures/JVN_Home.png" alt="JVN Website">
-                        </a>
-                        <h4><a href="JVN.html">JVN Data Security</a></h4>
-                        <p>Mock Website for JVN Data Security.</p>
-                    </article>
+                    <section class="animations">
+                        <article class="project-card">
+                            <video controls>
+                                <source src="Pictures/Final_Project_2501.mp4" type="video/mp4">
+                            </video>
+                            <h4><a href="change.html">Change</a></h4>
+                            <p>An animation project done in Maya</p>
 
+                        </article>
+
+                        <br>
+
+                        <article class="project-card">
+                            <video controls>
+                                <source src="Pictures/SneakyWalk.mp4" type="video/mp4">
+                            </video>
+                            <h4><a href="SneakyWalk.html">Sneaky Slumbers Character Movements</a></h4>
+                            <p>Character movements for the Sneaky Slumbers project.</p>
+                        </article>
+                    </section>
                 </div>
+                <br>
 
+                <section class="websites">
+                    <h3>Websites</h3>
+                        <div class="project-grid">
+                            <article class="project-card">
+                                <a class="thumb" href="JVN.html">
+                                    <img src="Pictures/JVN_Home.png" alt="JVN Website">
+                                </a>
+                                <h4><a href="JVN.html">JVN Data Security</a></h4>
+                                <p>Mock Website for JVN Data Security.</p>
+                            </article>
+
+                        </div>
+                </section>
 
             </div>
         </section>

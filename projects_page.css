@@ -1,10 +1,10 @@
 :root{
-    --bg: #f8fafc;
+    --bg: rgb(32, 32, 32);
     --card: #ffffff;
     --accent: #511fad;
     --accent-600: #3c128f;
     --muted: #6b7280;
-    --max-width: 1000px;
+    --max-width: 2000px;
     --radius: 10px;
 }
 
@@ -14,7 +14,6 @@ html,body{
     height:100%;
     margin:0;
     background:var(--bg);
-    color:#0f1724
 }
 
 body{
@@ -25,18 +24,27 @@ body{
 
 .container{
     max-width:var(--max-width);
+    width:80%;
     margin:24px auto;
     padding:0 16px
 }
 
 header{
-    background-color: #4f2ea0;
+    background-color: black;
     color: white;
     padding:16px;
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:12px;
+}
+
+.hero{
+    background: linear-gradient(135deg, #970202, #3d23b4);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    transition: padding 0.3s ease-in-out;
 }
 
 .title h1{
@@ -76,9 +84,11 @@ header{
     margin-top:18px;
     border-radius:var(--radius);
     box-shadow:0 6px 18px rgba(15,23,36,0.06);
-    color:#111827}
+    color:#eff0f3
+}
 
 .content h3{
+    color: white;
     margin-top:0
 }
 
@@ -89,7 +99,8 @@ header{
 }
 
 .project-card{
-    background:linear-gradient(180deg,rgba(180, 43, 43, 0.98),#fff);
+    color: white;
+    background:linear-gradient(180deg,rgb(146, 62, 62),#25117e);
     border-radius:8px;padding:12px;box-shadow:0 6px 14px rgba(2,6,23,0.06);
     transition:transform 180ms ease,box-shadow 180ms ease
 }
@@ -117,13 +128,13 @@ header{
 
 .project-card p{
     margin:0;
-    color:var(--muted);
+    color: white;
     font-size:14px
 }
 
 .project-card a {
     text-decoration: none;
-    color: black;
+    color: rgb(201, 201, 201);
 }
 
 .project-card a:hover {
@@ -133,16 +144,21 @@ header{
     padding: 2px;   
 }
 
+.images-side-by-side a{
+    display:flex;
+    gap: 5px;
+    width: 100%;
+}
+
 .animations video{
-    width:600px;
-    height:500px;
-    object-fit:cover;
+    max-width:1000px;
+    height:auto;
+    object-fit:contain;
     display:block;
 }
 
 .animations a {
     text-decoration: none;
-    color: black;
 }
 
 .animations a:hover {
@@ -154,8 +170,11 @@ header{
 
 .animations p{
     margin:0;
-    color:var(--muted);
     font-size:14px
+}
+
+.websites {
+    top: 10px;
 }
 
 .projects-grid-3d{
@@ -186,10 +205,9 @@ header{
 }
 
 footer{
-    margin:28px auto 48px;
     text-align:center;
     color:#fff;
-    background:var(--accent-600);
+    background: black;
     padding:16px 12px;
     border-radius:8px;
 }

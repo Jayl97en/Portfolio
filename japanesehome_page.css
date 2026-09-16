@@ -1,5 +1,5 @@
 :root{
-    --bg: #f8fafc;
+    --bg: rgb(32, 32, 32);
     --card: #ffffff;
     --accent: #511fad;
     --accent-600: #3c128f;
@@ -14,13 +14,21 @@ html,body{
     height:100%;
     margin:0;
     background:var(--bg);
-    color:#0f1724
+    color:white
 }
 
 body{
     font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
     line-height:1.6;
     font-size:16px
+}
+
+.hero{
+    background: linear-gradient(135deg, #034903, #4b2d00);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    transition: padding 0.3s ease-in-out;
 }
 
 .container{
@@ -37,23 +45,25 @@ body{
     display:flex;
     
 }
+img {
+    border-radius: 20px; /* Softens corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft, premium shadow */
+}
 
 .image {
     display: flex;
-    background: #b1aeae;
 }
 
 .images {
     flex: 50%;
-    padding: 30px;
     min-width: 200px;
+    margin: 10px;
 }
 
 .concept {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     padding: 10px;
     min-width: 200px;
 }
@@ -63,7 +73,7 @@ body{
     padding: 10px;
     min-width: 200px;
     margin-bottom:16px;
-    background: #b1aeae;
+    border-radius: 12px; /* Softens corners */
 }
 
 .conceptpics {
@@ -84,7 +94,7 @@ p {
 }
 
 header{
-    background-color: #4f2ea0;
+    background-color: black;
     color: white;
     padding:16px;
     display:flex;

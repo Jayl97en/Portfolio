@@ -14,36 +14,21 @@ html,body{
     height:100%;
     margin:0;
     background:var(--bg);
-    color:white;
+    color:white
 }
 
 body{
     font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
     line-height:1.6;
-    font-size:16px;
+    font-size:16px
 }
 
 .hero{
-    background: linear-gradient(135deg, #680000, #d1ce05);
+    background: linear-gradient(135deg, #04aef1, #01325f);
     color: white;
     padding: 60px 20px;
     text-align: center;
     transition: padding 0.3s ease-in-out;
-}
-
-video {
-    max-width: 100%;
-    height: auto;
-    display:block;
-    margin: 0 auto;
-    
-    padding: 10px;
-}
-
-p {
-    width: 100%;
-    align-items: center;
-    margin: 0 auto;
 }
 
 .container{
@@ -58,45 +43,33 @@ p {
     min-width: 200px;
     height:auto;
     display:flex;
-    
+    border-radius: 12px; /* Softens corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft, premium shadow */
 }
 
 .image {
     display: flex;
-    background: #b1aeae;
 }
 
 .images {
     flex: 50%;
-    padding: 30px;
     min-width: 200px;
+    margin: 10px;
 }
 
 .concept {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    padding: 10px;
+    padding: 30px;
     min-width: 200px;
 }
 
 .concept img{
-    width: 60%;
-    padding: 10px;
+    padding: 30px;
     min-width: 200px;
     margin-bottom:16px;
-    background: #b1aeae;
-}
-
-.conceptpics {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    min-width: 200px;
+    border-radius: 12px; /* Softens corners */
 }
 
 p {
@@ -253,10 +226,27 @@ footer{
     margin:8px auto 0
 }
 
+.resume-link{
+    display:inline-block;
+    padding:8px 12px;
+    background-color: #8250f7;
+    color: white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.resume-link:hover{
+    background-color: #b89dff;
+    transform:translateY(-2px);
+    text-decoration:none;
+}
+
 dl{
     margin:0;
     line-height:1.6;
-    color:var(--muted)
+    color:white;
 }
 
 dt{
@@ -264,6 +254,12 @@ dt{
 }
 dd{
     margin:0 0 8px 0
+}
+
+small{
+    font-size:12px;
+    text-align:center;
+    margin: 0;
 }
 
 @media (max-width:1000px){
